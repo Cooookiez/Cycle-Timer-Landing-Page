@@ -1,0 +1,33 @@
+// #Navigation {
+//     background: rgba($color: #ff0000, $alpha: .10) !important;
+//     * {
+//         background: rgba($color: #ff0000, $alpha: .10) !important;
+//     }
+// }
+
+nav#Navigation {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    & > ul {
+        display: flex;
+        padding: 5px;
+        margin: 0;
+        list-style-type: none;
+        gap: 5px;
+        justify-content: right;
+
+        & > li {
+            display: block;
+
+            & > a {
+                text-decoration: none;
+                display: block;
+                padding: 5px;
+            }
+        }
+    }
+}
